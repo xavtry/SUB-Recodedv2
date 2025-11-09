@@ -1,1 +1,26 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SUB Recoded</title>
+  <style>
+    body { margin: 0; font-family: sans-serif; }
+    #nav { display: flex; padding: 10px; background: #222; color: white; }
+    #urlInput { flex: 1; padding: 5px; }
+    button { margin-left: 5px; }
+    #browserFrame { width: 100%; height: calc(100vh - 50px); border: none; }
+  </style>
+</head>
+<body>
+  <div id="nav">
+    <input type="text" id="urlInput" placeholder="Enter URL..." />
+    <button id="goBtn">Go</button>
+    <button id="backBtn">←</button>
+    <button id="forwardBtn">→</button>
+    <button id="reloadBtn">⟳</button>
+  </div>
+  <iframe id="browserFrame"></iframe>
+  <script src="src/main.js"></script>
+</body>
+</html>
